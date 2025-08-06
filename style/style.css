@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+:root{
+    --bg-color: #f7f7f7;
+    --second-bg-color: #eaeaea;
+    --text-color: #3f3844;
+    --main-color: #ff5733;
+    --other-color: #5d6c83;
+}
+
+html{
+    font-size: 62.5%; /* Esto equivale a 1 rem -> 10px */
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-family: "AR One Sans", sans-serif;
+}
+
+section{
+    /* Esto lo que hace es que cada sección ocupe el 100% de la pantalla al momento de selecionarla */
+    max-height: 100vh;
+    padding: 10rem 10% 2rem;
+}
+
+/* Utilidades */
+
+.heading{
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.heading-description{
+    font-size: 1.8rem;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+span{
+    color: var(--main-color);
+}
+
+/* Estilo de header */
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    background-color: var(--bg-color);
+    box-shadow: 0 1px .3rem var(--text-color);
+}
+
+header .logo{
+    color: var(--main-color);
+    font-size: 2.5rem;
+}
+
+header .navbar{
+    display: flex;
+    gap: 10px;
+}
+
+header .navbar a{
+    color: var(--text-color);
+}
