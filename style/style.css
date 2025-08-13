@@ -9,7 +9,7 @@
     --bg-color: #f7f7f7;
     --second-bg-color: #eaeaea;
     --text-color: #3f3844;
-    --main-color: #ff5733;
+    --main-color: #3363ff;
     --other-color: #5d6c83;
 }
 
@@ -258,4 +258,107 @@ header .navbar a {
     margin: 2rem 0 3rem;
     font-size: 1.8rem;
     font-weight: 400;
+}
+
+/* Estilos de habilidades de About */
+
+.content-skills{
+    display: flex;
+    padding: 1.5rem 0 3rem 1.5rem;
+    gap: 4rem;
+}
+
+.skills h3{
+    display: inline-block;
+    border-bottom: .2rem solid var(--main-color);
+}
+
+.content-skills .item-skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-skills .item-skill span{
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.content-skills .item-skill i{
+    font-size: 5rem;
+}
+
+/* Estilo services */
+
+.heading-services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.heading-services h2{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.heading-services p{
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.services-content{
+    display: flex;
+    gap: 3rem;
+    margin:0;
+    padding: 1rem;
+}
+
+.services-content .service-window{
+    background-color: var(--second-bg-color);
+    border: .2rem solid var(--main-color);
+    border-radius: 2rem;
+    margin-top: 2rem;
+    padding: 5rem 2rem 3rem;
+    transition: .3s ease;
+}
+
+.services-content .service-window i{
+    font-size: 5rem;
+    color: var(--main-color);
+}
+
+.services-content .service-window h3{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.services-content .service-window p{
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.services-content .service-window .btn-now{
+    display: inline-flex;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 600;
+    line-height: 2;
+    margin: 1rem 0;
+    border-bottom: .2rem solid var(--text-color);
+    transition: .3s ease;
+}
+
+.services-content .service-window .btn-now>i{
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
+
+.services-content .service-window:hover{
+    transform: scale(1.02);
+}
+
+.services-content .service-window .btn-now:hover{
+    border-bottom: .2rem solid var(--main-color);
 }
