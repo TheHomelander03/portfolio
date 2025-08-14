@@ -37,6 +37,7 @@ section {
 .heading {
     font-size: 4.5rem;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .heading-description {
@@ -209,6 +210,7 @@ header .navbar a {
 
 .about .heading {
     text-align: start;
+    margin: 0;
 }
 
 .about .picture img {
@@ -317,8 +319,6 @@ header .navbar a {
     padding: 1rem;
 }
 
-
-
 .services-content .service-window {
     flex: 1 1 30rem;
     /* Esto lo que hace es que  ocupa el espacio necesario, y cuando se reduce se adapta el 
@@ -373,4 +373,31 @@ header .navbar a {
 
 .services-content .service-window .btn-now:hover {
     border-bottom: .2rem solid var(--main-color);
+}
+
+/* Estilos portfolio */
+
+.portfolio{
+    background-color: var(--second-bg-color);
+}
+
+.portfolio-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.portfolio-item{
+    width: 40vw;
+    padding: 2rem 2rem 3rem ;
+    margin-top: 4rem;
+    background-color: var(--bg-color);
+    border: .2rem solid var(--main-color);
+    border-radius: 1.5rem;
+}
+
+.portfolio-item img{
+    width: 100%;
+    border-radius: 1rem;
 }
