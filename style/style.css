@@ -383,21 +383,65 @@ header .navbar a {
 
 .portfolio-content{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    margin-top: 4rem;
 }
 
 .portfolio-item{
-    width: 40vw;
-    padding: 2rem 2rem 3rem ;
-    margin-top: 4rem;
+    width: calc(90%/2); /* Esto lo que hace es dividir cuanto ocuparan los elementos, es decir como hay un 2, ocuparan siempre 2 esto ayuda con el flex-wrap */
+    padding: 2rem;
     background-color: var(--bg-color);
-    border: .2rem solid var(--main-color);
+    border: .2rem solid transparent;
     border-radius: 1.5rem;
+    box-shadow: 0 0 0.5rem var(--main-color);
+    transition: all .5s ease;
+}
+
+.portfolio-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolio-item:hover{
+    cursor: pointer;
+    transform: scale(1.02) translateY(-.5rem);
+    outline: .2rem solid var(--main-color);
+}
+
+
+.portfolio-item h4{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.portfolio-item a{
+    display: inline-flex;
+    font-size: 3.5rem;
+    padding: .5rem;
+    border-radius: 50%;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+
+}
+
+.portfolio-item a:hover{
+    color: var(--bg-color);
+    background-color: var(--text-color);
+}
+
+.portfolio-item p{
+    color: var(--text-color);
+    margin-bottom: 2rem;
 }
 
 .portfolio-item img{
+    display: inline-block;
+    height: auto;
     width: 100%;
     border-radius: 1rem;
 }
+
