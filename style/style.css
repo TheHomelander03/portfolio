@@ -445,3 +445,72 @@ header .navbar a {
     border-radius: 1rem;
 }
 
+/* Estilos de COntact */
+
+.contact{
+    background-color: var(--second-bg-color);
+}
+
+.contact-content{
+    display: flex;
+    gap: 6rem;
+    padding: 3rem 0;
+}
+
+.contact-image{
+    width: 50%;
+}
+
+.contact-content img{
+    width: 100%;
+    height: 58rem;
+
+}
+
+
+.contact form{
+    width: 50%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: .2rem solid var(--main-color);
+    border-radius: 2rem;
+    padding: 3rem;
+    transition: all .3s ease;
+}
+
+.contact form:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+form input, form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background-color: var(--second-bg-color);
+    border-bottom: .25rem solid var(--main-color);
+    border-radius: .8rem .8rem 0 0;
+    margin: .7rem 0;
+}
+
+form textarea{
+    margin-bottom: 2rem;
+}
+
+form input:focus, form textarea:focus{
+    outline: none;
+    box-shadow: 0 .2rem 0.2rem var(--main-color);
+}
+
+.btn-submit{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-submit .btn{
+    width: auto;
+    cursor: pointer;
+}
